@@ -1,0 +1,14 @@
+{
+  "name": "Binge Watcher",
+  "description": "Disables \"Continue Watching\" notification in Netflix and automatically starts next season without clicking for maximum binge.",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+    "matches": ["http://www.netflix.com/WiPlayer*","https://www.netflix.com/WiPlayer*"],
+    "js": ["script.js"]
+    }
+  ],
+  "icons": { "16": "icon.png", "128": "icon.png" },
+  "minimum_chrome_version": "9"
+}
